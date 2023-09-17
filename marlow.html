@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Website</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+		<link rel="stylesheet" href="./style.css">
+		<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<main>
+			<a href="index.html" class="header">
+				<h1>Portfolio</h1>
+			</a>
+
+			<div class="all-content">
+
+				<div class="section">
+					
+					<h2>Mr. Marlow's Manor of Mayhem</h2>
+                    <p>
+						This game was made using the Microsoft Hololens in a team of 3 over a semester. 
+						<br/><br/>
+						For this project, we wanted to make a game that felt properly suited to augmented reality. Our initial ideas were essentially "we should use this pre-existing game mechanic in AR". We quickly realised this reduced the AR aspect to being just a gimmick. If an AR game can easily be played on desktop or with VR, why bother? As such, we moved towards creating game mechanics that couldn't work in just the physical world or the digital world, but needed a good combination of both.
+						<br/><br/>
+						The solution: an escape room-style game where you must outsmart a murderous clown. We thought this would be a good place to start from as escape rooms work well in the real world, but using augmented reality we could have mechanics that would not be physically practicable or possible. We created minigames that required interaction with both the real and virtual world to complete. This was done using an iterative process where prototypes were made, discussed, and kept or thrown out as necessary. 
+						<br/><br/>
+						You can view our promotional poster for this game <a href="assets/poster.pdf">here</a>.
+                    </p>
+				</div>
+
+				<div class="section">
+					<div class="gallery-container">
+						<div class="gallery-showcase">
+							<img id="gallery-image" src="assets/screenshots/marlow.png"/>
+							<div class="video-wrapper">
+								<iframe id="gallery-video" class="inactive"  src="assets/videos/marlow1.mp4" frameBorder="0">
+								</iframe>
+							</div>
+							<button class="gallery-btn" id="gallery-btn-left" type="button">prev</button>
+							<button class="gallery-btn" id="gallery-btn-right" type="button">next</button>
+						</div>
+						<div class="gallery-navigation">
+							<img class="gallery-thumbnail highlighted" src="assets/screenshots/marlow.png"/>
+							<img class="gallery-thumbnail" src="assets/thumbnails/marlow-thumb1.png" vid="assets/videos/marlow1.mp4"/>
+							<img class="gallery-thumbnail" src="assets/thumbnails/marlow-thumb2.png" vid="assets/videos/marlow2.mp4"/>
+						</div>
+					</div>
+				</div>
+				
+				<div class="section">
+					<h3>My work</h3>
+					<ul>
+						<li>Researched technologies needed for our project - namely the Hololens-Unity API and an image tracking library - and implemented them into our project.</li>
+						<li>Wrote up notes to make the process of working with the Hololens easier for other members.</li>
+						<li>Setup a system that allowed communication between the host PC and the Hololens using UDP. This was needed to transmit objects tracked using motion capture to the Hololens.</li>
+						<li>Setup a system that uses markers on the walls to calibrate where the Hololens should render things. This allowed us to say that e.g. coordinates (1, 0, 1) in the game world will line up with a certain corner of the room.</li>
+						<li>Created some minigames: </li>
+						<ul>
+							<li>A real office chair can be spun to pop virtual balloons using a virtual laser coming out of its back.</li>
+							<li>In the same vein, at a later point this same chair can be spun to attack the evil clown Marlow.</li>
+							<li>Clown-themed boxes that force players to reach into their mouths without getting "bitten". In these I hid codes to open a padlock.</li>
+						</ul>
+						<li>Debugged the final product to ensure everything was stable and fully playable.</li>
+                    </ul>
+				</div>
+
+				<div class="section">
+					<a href="bread.html">← i made bread</a>
+					<a href="vrdr.html" class="next-page-right">VRDR →</a>
+				</div>
+
+
+			</div>
+		</main>
+		<script src="./index.js"></script>
+	</body>
+</html>

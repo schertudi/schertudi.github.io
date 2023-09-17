@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Website</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<main>
+			<a href="index.html" class="header">
+				<h1>Portfolio</h1>
+			</a>
+			
+			<div class="all-content">
+				
+				
+
+				<div class="section">
+					
+					<h2>A SLICK ESCAPE</h2>
+                    <p>
+                        Developed in 48 hours with one other person, this was our entry for the 2023 Global Game Jam. The theme was "roots", with our interpretation of this being a creature that branches out as it eats food. This turned into a stealth game where you, a science experiment gone wrong, must grow large enough to destroy and escape the lab without anyone noticing.
+						<br/><br/>
+						You can download this game at <a href="https://globalgamejam.org/2023/games/slick-escape-0">https://globalgamejam.org/2023/games/slick-escape-0</a>. 
+                    </p>
+				</div>
+
+				<div class="section">
+					<div class="gallery-container">
+						<div class="gallery-showcase">
+							<img id="gallery-image" src="assets/screenshots/escape0.png"/>
+							<div class="video-wrapper">
+								<iframe id="gallery-video" class="inactive" src="assets/videos/escape.mp4" frameBorder="0">
+								</iframe>
+							</div>
+							<button class="gallery-btn" id="gallery-btn-left" type="button">prev</button>
+							<button class="gallery-btn" id="gallery-btn-right" type="button">next</button>
+						</div>
+						<div class="gallery-navigation">
+							<img class="gallery-thumbnail highlighted" src="assets/screenshots/escape0.png"/>
+							<img class="gallery-thumbnail" src="assets/screenshots/escape1.png"/>
+							<img class="gallery-thumbnail" src="assets/screenshots/escape2.png"/>
+							<img class="gallery-thumbnail" src="assets/thumbnails/escape-thumb.png" vid="assets/videos/escape.mp4"/>
+						</div>
+					</div>
+				</div>
+					
+				<div class="section">
+					<h3>My work</h3>
+					<ul>
+                        <li>Branches following mouse</li>
+						<li>Ability to destroy objects in the room</li>
+						<li>Enemy behaviour - entering room at set times and zapping the slime if beyond the caution tape.</li>
+                    </ul>
+					A full list of credits for third-party assets can be seen on the Global Game Jam page.
+				</div>
+					
+				<div class="section">
+					<a href="./gestures.html">← Gestures of Arcana</a>
+					<a href="./bread.html" class="next-page-right">i made bread →</a>
+				</div>
+
+
+			</div>
+		</main>
+		<script src="index.js"></script>
+	</body>
+</html>

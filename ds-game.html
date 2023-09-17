@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Website</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<main>
+			<a href="index.html" class="header">
+				<h1>Portfolio</h1>
+			</a>
+
+			<div class="all-content">
+				<div class="section">
+					
+					<h2>DS Polkka</h2>
+                    <p>
+						In this project, I wanted to experiment with the concept of a "dynamic" rhythm game - one that feels like it really responds to the player's actions. To this extent, I made a lot of animations that activate on correct hitting of beats. I also have a system where gaining a perfect combo in some sections activates a more interesting piece of music. My hope is that this would make the game much more engaging than typical rhythm games. 
+						<br/><br/>
+						I have playtested this with a few people and the reactions were very positive, so I believe I am on the right track.
+						<br/><br/>
+						At the moment, I have a basic gameplay loop where players can play through one short song. In the future I plan on extending this to include a tutorial for new players, multiple songs, and score tracking as well as a bigger variety of animations and input methods.
+						<br/><br/>
+						I was interested in developing for the Nintendo DS as it requires additional challenges over a typical desktop project. Performance and space are more of an issue and it can be tricky finding comprehensive documentation on features. However, it has been a very fun project so far!
+                    </p>
+				</div>
+
+				<div class="section">
+					<div class="gallery-container">
+						<div class="gallery-showcase">
+							<img id="gallery-image" src="assets/screenshots/ds.png"/>
+							<div class="video-wrapper">
+								<iframe id="gallery-video" class="inactive" src="assets/videos/ds.mp4" frameBorder="0">
+								</iframe>
+							</div>
+							<button class="gallery-btn" id="gallery-btn-left" type="button">prev</button>
+							<button class="gallery-btn" id="gallery-btn-right" type="button">next</button>
+						</div>
+						<div class="gallery-navigation">
+							<img class="gallery-thumbnail highlighted" src="assets/screenshots/ds.png"/>
+							<img class="gallery-thumbnail" src="assets/thumbnails/ds-thumb.png" vid="assets/videos/ds.mp4"/>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<h3>My work</h3>
+					This project was built off devkitPro's system libraries for the Nintendo DS, plus a wrapper library to simplify rendering 2d graphics. This allowed me to draw to the screen, read input, perform calculations and play sound without much effort. All functionality beyond that is coded by myself:
+					<ul>
+                        <li>Render custom shapes and animations by drawing triangles onto the screen</li>
+						<li>Spawn hit circles in time to the music, and determine whether or not the player has correctly hit these</li>
+						<li>A flexible animation system that makes it trivial to create new animations based on player input. This can be extended for complex animations involving multiple hit circles.</li>
+						<li>Parser to quickly define level data. This includes information about where and when hit circles are spawned, and the ability to select and customize animations that react to those circles being hit.</li>
+						<li>The player can "level up" during a song by correctly hitting a sequence of blue beats. This allows additional animations and a backing song track to play.</li>
+						<li>Optimised to ensure stable 60fps on a 67mhz processor* and that memory use never exceeds the DS's 4mb of ram.</li>
+                    </ul>
+
+					*the DS does have a second CPU, but it can't do much.
+
+				</div>
+
+				<div class="section">
+					<a href="./vrdr.html">← VRDR</a>
+					<a href="./gestures.html" class="next-page-right">Gestures of Arcana →</a>
+				</div>
+
+			</div>
+		</main>
+		<script src="index.js"></script>
+	</body>
+</html>

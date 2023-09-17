@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Website</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<main>
+			<a href="index.html" class="header">
+				<h1>Portfolio</h1>
+			</a>
+
+			<div class="all-content">
+
+				<div class="section">
+					
+					<h2>VRDR (Virtual Reality Design Review)</h2>
+                    <p>
+						This project allows Enphase Energy to visualise the real-world usage of potential products. 3d models of designs can be imported into a session and viewed in the context of a typical customer's home. These models can be scaled, rotated, and moved around the house. Textures can be added to models and saved for later sessions. This can be run on both a standard desktop as well as VR, allowing users to get an accurate sense of product scale. Multiple users can join the same session to enable discussion of designs.
+						<br/><br/>
+						This was the conclusion to a project another intern had started the year before us. Essentially we needed to get the project from a prototype to a polished final product. I worked on this with another student over the span of the 2021-2022 summer break.
+						<br/><br/>
+						Before this I had done very little work in Unreal and had done nothing regarding networking, so it was a great learning experience for me.
+                    </p>
+				</div>
+
+				<div class="section">
+					<div class="gallery-container">
+						<div class="gallery-showcase">
+							<img id="gallery-image" src="assets/screenshots/enphase.png"/>
+							<div class="video-wrapper">
+								<iframe id="gallery-video" class="inactive" src="assets/videso/vrdr.mp4" frameBorder="0">
+								</iframe>
+							</div>
+							<button class="gallery-btn" id="gallery-btn-left" type="button">prev</button>
+							<button class="gallery-btn" id="gallery-btn-right" type="button">next</button>
+						</div>
+						<div class="gallery-navigation">
+							<img class="gallery-thumbnail highlighted" src="assets/screenshots/enphase.png"/>
+							<img class="gallery-thumbnail" src="assets/screenshots/vrdr1.png"/>
+							<img class="gallery-thumbnail" src="assets/thumbnails/enphase-thumb1.png" vid="assets/videos/vrdr.mp4"/>
+							<img class="gallery-thumbnail" src="assets/thumbnails/enphase-thumb2.png" vid="assets/videos/vrdr2.mp4"/>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<h3>My work</h3>
+					<ul>
+                        <li>I worked on a system that allowed 3d objects to be customized with materials: 
+						<ul>
+							<li>Different parts of the model can have different materials</li>
+							<li>Properties of the material can be customised through a GUI.</li>
+							<li>This was extended to allow these preferences to be stored and loaded from disk.</li>
+							<li>Configured objects also had to be synced from the host server to any clients, with any changes updated in realtime.</li>
+						</ul>
+
+						<li>We also needed a system for loading 3d objects from a file on the network. I implemented this.</li>
+
+						<li>I also did general work on the program's various graphical interfaces, such as the menu to show control scheme</li>
+
+						<li>Configuration options eg input rebindings, configuration of session path</li>
+						<li>Documentation of final project to simplify work for any future developers</li>
+
+                    </ul>
+
+				</div>
+
+				<div class="section">
+					<a href="./marlow.html">← Mr. Marlow's Manor of Mayhem</a>
+					<a href="./ds-game.html" class="next-page-right">DS Polkka →</a>
+				</div>
+
+			</div>
+		</main>
+		<script src="index.js"></script>
+	</body>
+</html>
