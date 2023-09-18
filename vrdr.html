@@ -2,18 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>My Website</title>
+		<title>Mia Swart</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="icon4.png" type="image/x-icon">
 	</head>
 	<body>
 		<main>
 			<a href="index.html" class="header">
-				<h1>Portfolio</h1>
+				<h1>Mia Swart</h1>
 			</a>
 
 			<div class="all-content">
@@ -33,19 +32,22 @@
 				<div class="section">
 					<div class="gallery-container">
 						<div class="gallery-showcase">
-							<img id="gallery-image" src="assets/screenshots/enphase.png"/>
-							<div class="video-wrapper">
-								<iframe id="gallery-video" class="inactive" src="assets/videso/vrdr.mp4" frameBorder="0">
-								</iframe>
+							<img id="gallery-image" class="gallery-item" src="assets/screenshots/enphase.png"/>
+							<img id="gallery-image" class="gallery-item inactive" src="assets/screenshots/vrdr1.png"/>
+							<div class="video-wrapper gallery-item inactive">
+								<iframe src="https://drive.google.com/file/d/1a3g_lzldwpC6GGjvG1Cjj4ykfrp51tt_/preview" frameBorder="0" allow="autoplay"></iframe>
 							</div>
-							<button class="gallery-btn" id="gallery-btn-left" type="button">prev</button>
-							<button class="gallery-btn" id="gallery-btn-right" type="button">next</button>
+							<div class="video-wrapper gallery-item inactive">
+								<iframe src="https://drive.google.com/file/d/1OhgVtLehWXVone9UzWwhhHRpuH07OPI2/preview" frameBorder="0" allow="autoplay"></iframe>
+							</div>
 						</div>
 						<div class="gallery-navigation">
+							<button class="gallery-btn" id="gallery-btn-left" type="button">▲</button>
 							<img class="gallery-thumbnail highlighted" src="assets/screenshots/enphase.png"/>
 							<img class="gallery-thumbnail" src="assets/screenshots/vrdr1.png"/>
-							<img class="gallery-thumbnail" src="assets/thumbnails/enphase-thumb1.png" vid="assets/videos/vrdr.mp4"/>
-							<img class="gallery-thumbnail" src="assets/thumbnails/enphase-thumb2.png" vid="assets/videos/vrdr2.mp4"/>
+							<img class="gallery-thumbnail" src="assets/thumbnails/enphase-thumb1.png"/>
+							<img class="gallery-thumbnail" src="assets/thumbnails/enphase-thumb2.png"/>
+							<button class="gallery-btn" id="gallery-btn-right" type="button">▼</button>
 						</div>
 					</div>
 				</div>

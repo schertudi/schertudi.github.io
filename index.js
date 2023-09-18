@@ -4,12 +4,15 @@ var prevBtn = document.getElementById("gallery-btn-left");
 var nextBtn = document.getElementById("gallery-btn-right");
 var isVideoSetup = false;
 //mainVid.classList.add("inactive");
+var galleryItems = document.getElementsByClassName("gallery-item");
+console.log(galleryItems);
 
 var index = 0;
 
 
 function setMain(i) {
     thumbnails[index].classList.remove("highlighted");
+    galleryItems[index].classList.add("inactive");
 
     index = i;
     if (index >= thumbnails.length) {
@@ -20,6 +23,9 @@ function setMain(i) {
     }
 
     thumbnails[index].classList.add("highlighted");
+    galleryItems[index].classList.remove("inactive");
+
+    /*
     let imageName = thumbnails[index].getAttribute("src");
     let vidName = thumbnails[index].getAttribute("vid");
 
@@ -37,6 +43,7 @@ function setMain(i) {
         }
         //isVideoSetup = true;
     }
+    */
     
 }
 

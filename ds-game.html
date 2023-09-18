@@ -2,18 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>My Website</title>
+		<title>Mia Swart</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="icon4.png" type="image/x-icon">
 	</head>
 	<body>
 		<main>
 			<a href="index.html" class="header">
-				<h1>Portfolio</h1>
+				<h1>Mia Swart</h1>
 			</a>
 
 			<div class="all-content">
@@ -34,17 +33,16 @@
 				<div class="section">
 					<div class="gallery-container">
 						<div class="gallery-showcase">
-							<img id="gallery-image" src="assets/screenshots/ds.png"/>
-							<div class="video-wrapper">
-								<iframe id="gallery-video" class="inactive" src="assets/videos/ds.mp4" frameBorder="0">
-								</iframe>
+							<img id="gallery-image" class="gallery-item" src="assets/screenshots/ds.png"/>
+							<div class="video-wrapper gallery-item inactive">
+								<iframe src="https://drive.google.com/file/d/1FcEnM9g20qTJDCuuhOVwY-3uRMf60ple/preview" allow="autoplay" frameBorder="0"></iframe>
 							</div>
-							<button class="gallery-btn" id="gallery-btn-left" type="button">prev</button>
-							<button class="gallery-btn" id="gallery-btn-right" type="button">next</button>
 						</div>
 						<div class="gallery-navigation">
+							<button class="gallery-btn" id="gallery-btn-left" type="button">▲</button>
 							<img class="gallery-thumbnail highlighted" src="assets/screenshots/ds.png"/>
-							<img class="gallery-thumbnail" src="assets/thumbnails/ds-thumb.png" vid="assets/videos/ds.mp4"/>
+							<img class="gallery-thumbnail" src="assets/thumbnails/ds-thumb.png"/>
+							<button class="gallery-btn" id="gallery-btn-right" type="button">▼</button>
 						</div>
 					</div>
 				</div>
@@ -55,13 +53,15 @@
 					<ul>
                         <li>Render custom shapes and animations by drawing triangles onto the screen</li>
 						<li>Spawn hit circles in time to the music, and determine whether or not the player has correctly hit these</li>
-						<li>A flexible animation system that makes it trivial to create new animations based on player input. This can be extended for complex animations involving multiple hit circles.</li>
-						<li>Parser to quickly define level data. This includes information about where and when hit circles are spawned, and the ability to select and customize animations that react to those circles being hit.</li>
+						<li>A flexible animation system that makes it trivial to create new animations that react to player behaviour. This can be extended for complex animations involving multiple hit circles.</li>
+						<li>A parser to quickly define level data. This includes information about where and when hit circles are spawned, and the ability to add and customize animations that react to those circles being hit.</li>
 						<li>The player can "level up" during a song by correctly hitting a sequence of blue beats. This allows additional animations and a backing song track to play.</li>
-						<li>Optimised to ensure stable 60fps on a 67mhz processor* and that memory use never exceeds the DS's 4mb of ram.</li>
+						<li>Optimised to ensure a stable 60fps on a 67mhz processor* and that memory use never exceeds the DS's 4mb of ram.</li>
                     </ul>
 
 					*the DS does have a second CPU, but it can't do much.
+					<br/><br/>
+					You can view the source code for this project at <a href="https://github.com/schertudi/ds-rhythm-game">github.com/schertudi/ds-rhythm-game</a>.
 
 				</div>
 

@@ -12,7 +12,7 @@
 	--hunter-green: #3F6553ff;
 	--hunter-green-dark: rgb(36, 66, 65);
 	--raisin-black: #2B2C33ff;
-	--rich-black: #0F171Aff;
+	--rich-black: rgb(15, 19, 26);
 	--black: rgb(4, 1, 10);
 
 /*
@@ -44,6 +44,10 @@ body, main {
 
 * {
 	color: var(--text);
+}
+
+img {
+	border-radius: 4px;
 }
 
 .all-content {
@@ -83,6 +87,16 @@ h5 {
 	float: left;
 }
 
+.item-header {
+	display: flex;
+	align-items: center;
+}
+
+.item-header h3 {
+	flex-grow:1;
+	vertical-align: middle;
+}
+
 .tag-container {
 	float: right;
 }
@@ -90,12 +104,14 @@ h5 {
 .tag {
 	background-color: var(--hunter-green);
 	border-radius: 7px;
-	padding: 3px;
+	padding: 4px;
 	width: fit-content;
 	float: left;
 	margin-left: 0.5em;
 	font-size: 0.8em;
-	
+	display: flex;
+	align-items:center;
+    justify-content:center;
 }
 
 h2 {
@@ -167,12 +183,16 @@ h2 {
 max-height: 100%;
 }
 
+
+
+/*
 .gallery-btn {
 	position: absolute;
 	bottom: 1rem;
 	color: black;
 	cursor: pointer;
 }
+
 
 #gallery-btn-left {
 	left: 1rem;
@@ -181,6 +201,7 @@ max-height: 100%;
 #gallery-btn-right {
 	right: 1rem;
 }
+*/
 
 #gallery-image {
 	width: 100%;
@@ -210,25 +231,39 @@ max-height: 100%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	row-gap: 2rem;
+	row-gap: 1rem;
 	justify-content: center;
+	align-items:baseline;
+}
+
+.gallery-btn {
+	background-color: var(--rich-black);
+	border: 0;
+	color: var(--hunter-green);
+	cursor: pointer;
+	width: 100%;
+}
+
+.gallery-btn:hover {
+	color: var(--lightish-green);
 }
 
 .gallery-thumbnail {
 	height: 20%;
-	border: 2px solid #00000000;
+	border: 3px solid var(--rich-black);
 	cursor: pointer;
+	border-radius: 5px;
 }
 
 .gallery-thumbnail:hover {
 	height: 20%;
-	border: 2px solid #6d695b;
+	border: 3px solid var(--lightish-green);
 	cursor: pointer;
 }
 
 
 .highlighted {
-	border: 2px solid #5e5e5e;
+	border: 3px solid var(--hunter-green);
 }
 
 .inactive {
